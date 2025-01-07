@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-tea-cream text-tea-brown font-serif;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.magical-hover {
+  @apply transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-tea-elegant;
+}
+
+.tea-card {
+  @apply bg-white rounded-xl p-6 shadow-tea-elegant border-2 border-tea-lavender/20;
+}
+
+.hero {
+  background-image: url('tea-background.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.bg-light {
+  background-color: #f9f9f9;
+}
+
+.bg-tea-button {
+  background-color: #6b8e23;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+}
