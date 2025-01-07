@@ -1,18 +1,20 @@
-import React from 'react';
-    import Header from './components/Header';
-    import Hero from './components/Hero';
-    import CTA from './components/CTA';
-    import Services from './components/Services';
+import React from 'react'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Services from './components/Services'
+import Pricing from './components/Pricing'
+import Footer from './components/Footer'
 
-    const App = () => {
-      return (
-        <div>
-          <Header />
-          <Hero />
-          <CTA />
-          <Services />
-        </div>
-      );
-    };
+function App() {
+  return (
+    <div className="bg-cookie-cream text-cookie-choco font-serif">
+      <Header />
+      <Hero />
+      <Services />
+      <Pricing />
+      <Footer />
+    </div>
+  )
+}
 
-    export default App;
+export default App

@@ -2,35 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Baskerville:wght@400;700&family=Great+Vibes&display=swap');
+
 body {
-  @apply bg-tea-cream text-tea-brown font-serif;
+  @apply bg-cookie-cream text-cookie-choco font-serif;
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Baskerville', serif;
 }
 
 .magical-hover {
-  @apply transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-tea-elegant;
+  @apply transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-cookie-elegant;
 }
 
-.tea-card {
-  @apply bg-white rounded-xl p-6 shadow-tea-elegant border-2 border-tea-lavender/20;
+.cookie-card {
+  @apply bg-white rounded-xl p-6 shadow-cookie-elegant border-2 border-cookie-caramel/20;
 }
 
 .hero {
-  background-image: url('tea-background.jpg');
-  background-size: cover;
-  color: white;
+  @apply relative min-h-screen flex items-center justify-center;
 }
 
 .bg-light {
-  background-color: #f9f9f9;
+  @apply bg-cookie-cream text-cookie-choco;
 }
 
-.bg-tea-button {
-  background-color: #6b8e23;
-}
-
-.service-item img {
-  width: 100%;
-  height: auto;
+.bg-cookie-button {
+  @apply bg-cookie-caramel text-white;
 }
